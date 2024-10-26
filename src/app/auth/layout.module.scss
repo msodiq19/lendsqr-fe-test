@@ -1,0 +1,12 @@
+$layout-break-point: 960px;
+
+.container{
+    height: 100vh;
+}
+
+@media (min-width: $layout-break-point) {
+    .container{
+        display: flex;
+        gap: 4;
+    }
+}

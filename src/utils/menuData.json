@@ -1,0 +1,29 @@
+{
+    "customers": [
+      "Users",
+      "Guarantors",
+      "Loans",
+      "Decision Models",
+      "Savings",
+      "Loan Requests",
+      "Whitelist",
+      "Karma"
+    ],
+    "businesses": [
+      "Organization",
+      "Loan Products",
+      "Savings Products",
+      "Fees and Charges",
+      "Transactions",
+      "Services",
+      "Service Account",
+      "Settlements",
+      "Reports"
+    ],
+    "settings": [
+      "Preferences",
+      "Fees and Pricing",
+      "Audit Logs"
+    ]
+  }
+  

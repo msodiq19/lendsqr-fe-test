@@ -1,0 +1,33 @@
+$layout-break-point: 960px;
+
+.login{
+    width: 100%;
+    border: 2px solid #545F7D26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+
+    div.loginContent {
+        width: 70%;
+        margin: 0 auto;
+
+        h2{
+            color: #213F7D;
+            font-weight: 700;
+            font-size: 40px;
+        }
+        p {
+            color: #545F7D;
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media (min-width: $layout-break-point) {
+    .login{
+        width: 50%;
+    }
+}

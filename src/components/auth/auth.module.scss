@@ -1,0 +1,63 @@
+$layout-break-point: 960px;
+
+.authAside{
+    padding: 2em;
+}
+.logo{
+    padding-left: 1.5em;
+}
+
+form.loginForm {
+    width: 100%;
+
+    div {
+        border: 2px solid #545F7D26;
+        padding: .7em 8px;
+        margin: 24px 0;
+        border-radius: 5px;
+
+        input {
+            height: 100%;
+            width: 80%;
+            outline: none;
+            border: none;
+        }
+        span {
+            color: #39CDCC;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        
+    }
+    div.passBox {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    p{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    button.btn {
+        width: 100%;
+        background: #39CDCC;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 1.5em;
+        padding: 1em .2em;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+}
+
+@media (min-width: $layout-break-point) {
+    .authAside{
+        width: 50%;
+    }
+}
+
