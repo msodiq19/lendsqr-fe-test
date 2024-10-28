@@ -47,10 +47,11 @@
     }
 
     .section{
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 150px;
+        min-width: 220px;
         margin: 1em 0;
 
         a.docs{
@@ -61,6 +62,7 @@
         .avatarBox{
             display: flex;
             align-items: center;
+            gap: 8px;
             
             .avatar{
                 height: 40px;
@@ -73,6 +75,29 @@
             }
         }
     }
+
+    .dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 4px;
+        z-index: 1000;
+        width: 150px;
+        
+        p {
+          margin: 0;
+          padding: 8px 12px;
+          cursor: pointer;
+          &:hover {
+            background-color: #f5f5f5;
+          }
+        }
+      }
+      
     
 }
 
@@ -83,11 +108,31 @@
 }
 
 .sidebar {
-    width: 250px;
+    width: 270px;
     background-color: #ffffff;
     color: #213F7D;
-    padding: 20px;
     box-shadow: 0px 5px 20px 0px #0000000A;
+
+    .organisation,
+    .dashboard {
+        display: flex;
+        align-items: normal;
+        text-align: center;
+        gap: 8px;
+        margin: 1em 0;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #213F7D;
+
+        a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #213F7D;
+        }
+        span{
+            font-size: 14px;
+        }
+    }
   }
   
   .section {
@@ -97,6 +142,7 @@
       font-size: 12px;
       font-weight: 500;
       margin-bottom: 10px;
+      padding: 5px 20px;
       color: #545F7D;
     }
   
@@ -105,13 +151,19 @@
       padding: 0;
   
       li {
-        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 20px;
         font-size: 16px;
-        color: #666;
   
         &:hover {
+            background: #39CDCC20;
           color: #333;
           cursor: pointer;
+        }
+        &:active {
+            background: #39CDCC;
         }
       }
     }

@@ -9,6 +9,8 @@ $layout-break-point: 960px;
 
 form.loginForm {
     width: 100%;
+    box-shadow: 0px 15px 90px 0px #00000008;
+    
 
     div {
         border: 2px solid #545F7D26;
@@ -21,6 +23,9 @@ form.loginForm {
             width: 80%;
             outline: none;
             border: none;
+            color: #39CDCC;
+            font-size: 14px;
+            font-weight: 400;
         }
         span {
             color: #39CDCC;

@@ -1,0 +1,55 @@
+:root {
+  --font-work-sans: 'Work Sans', system-ui, sans-serif;
+  --font-avenir: 'Avenir Next', 'Work Sans', system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  font-family: var(--font-work-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Font mixins
+@mixin work-sans {
+  font-family: var(--font-work-sans);
+}
+
+@mixin avenir {
+  font-family: var(--font-avenir);
+}
+
+// Font weight mixins
+@mixin font-light {
+  font-weight: 300;
+}
+
+@mixin font-regular {
+  font-weight: 400;
+}
+
+@mixin font-medium {
+  font-weight: 500;
+}
+
+@mixin font-semibold {
+  font-weight: 600;
+}
+
+@mixin font-bold {
+  font-weight: 700;
+}
+
+.work-sans {
+  @include work-sans;
+}
+
+.avenir {
+  @include avenir;
+}

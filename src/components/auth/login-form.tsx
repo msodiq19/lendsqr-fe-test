@@ -12,10 +12,10 @@ const LoginForm = () => {
   return (
     <form className={styles.loginForm}>
         <div>
-            <input type='text' />
+            <input type='text' placeholder='Email' />
         </div>
         <div className={styles.passBox}>
-            <input type={show ? 'text' : 'password'} />
+            <input type={show ? 'text' : 'password'} placeholder='Password' />
             <span onClick={() => setShow(!show)}>{show ? 'hide' : 'show'}</span>
         </div>
         <p>Forgot Password?</p>

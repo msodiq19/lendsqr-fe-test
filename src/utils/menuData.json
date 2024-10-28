@@ -1,29 +1,28 @@
 {
-    "customers": [
-      "Users",
-      "Guarantors",
-      "Loans",
-      "Decision Models",
-      "Savings",
-      "Loan Requests",
-      "Whitelist",
-      "Karma"
-    ],
-    "businesses": [
-      "Organization",
-      "Loan Products",
-      "Savings Products",
-      "Fees and Charges",
-      "Transactions",
-      "Services",
-      "Service Account",
-      "Settlements",
-      "Reports"
-    ],
-    "settings": [
-      "Preferences",
-      "Fees and Pricing",
-      "Audit Logs"
-    ]
-  }
-  
+  "customers": [
+    { "name": "Users", "icon": "/assets/user-friends.svg" },
+    { "name": "Guarantors", "icon": "/assets/guarantors.svg" },
+    { "name": "Loans", "icon": "/assets/loans.svg" },
+    { "name": "Decision Models", "icon": "/assets/decision_models.svg" },
+    { "name": "Savings", "icon": "/assets/savings.svg" },
+    { "name": "Loan Requests", "icon": "/assets/loan_requests.svg" },
+    { "name": "Whitelist", "icon": "/assets/whitelist.svg" },
+    { "name": "Karma", "icon": "/assets/karma.svg" }
+  ],
+  "businesses": [
+    { "name": "Organization", "icon": "/assets/briefcase.svg" },
+    { "name": "Loan Products", "icon": "/assets/loan_requests.svg" },
+    { "name": "Savings Products", "icon": "/assets/savings_products.svg" },
+    { "name": "Fees and Charges", "icon": "/assets/fees_charges.svg" },
+    { "name": "Transactions", "icon": "/assets/transactions.svg" },
+    { "name": "Services", "icon": "/assets/services.svg" },
+    { "name": "Service Account", "icon": "/assets/service_accounts.svg" },
+    { "name": "Settlements", "icon": "/assets/settlements.svg" },
+    { "name": "Reports", "icon": "/assets/reports.svg" }
+  ],
+  "settings": [
+    { "name": "Preferences", "icon": "/assets/preferences.svg" },
+    { "name": "Fees and Pricing", "icon": "/assets/fees_pricings.svg" },
+    { "name": "Audit Logs", "icon": "/assets/audit_logs.svg" }
+  ]
+}
