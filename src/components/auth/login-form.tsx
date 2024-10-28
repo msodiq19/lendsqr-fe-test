@@ -9,8 +9,13 @@ const LoginForm = () => {
 
     const router = useRouter()
 
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault()
+      router.push('/users')
+    }
+
   return (
-    <form className={styles.loginForm}>
+    <form className={styles.loginForm} onSubmit={(e) => handleSubmit(e)}>
         <div>
             <input type='text' placeholder='Email' />
         </div>
@@ -19,7 +24,7 @@ const LoginForm = () => {
             <span onClick={() => setShow(!show)}>{show ? 'hide' : 'show'}</span>
         </div>
         <p>Forgot Password?</p>
-        <button onClick={() => router.push('/users')} className={styles.btn}>LOG IN</button>
+        <button className={styles.btn}>LOG IN</button>
     </form>
   )
 }
